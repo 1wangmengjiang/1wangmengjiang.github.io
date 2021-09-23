@@ -1,0 +1,52 @@
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>9-15</title><meta name="description" content="好好学习🤑🤑"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/null"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="node可以做什么？编写cil：脚本 vue-cli create-react-app 搭建一个webpack
+发包：  发布到线上  npm i xxx
+代理： 异步的，可以处理高并发情况，做中间层
+利用成熟的框架搭建后台： koa / egg
+
+把自己创建的包上传到npm中 ，也可以下载 ？
+创建文件夹，命名规范，
+生成package.json ： npm init  -y
+创建一个index.js入口文件
+
+
+去npm官网注册账号： https://www.npmjs.com/
+镜像地址改为npm的镜像地址： npm config set registry https://registry.npmjs.org/
+npm login ：输入npm账号密码邮箱
+上传 ： npm publish
+
+下载包改.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">王梦江's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">9-15</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#node%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">node可以做什么？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%8A%8A%E8%87%AA%E5%B7%B1%E5%88%9B%E5%BB%BA%E7%9A%84%E5%8C%85%E4%B8%8A%E4%BC%A0%E5%88%B0npm%E4%B8%AD-%EF%BC%8C%E4%B9%9F%E5%8F%AF%E4%BB%A5%E4%B8%8B%E8%BD%BD-%EF%BC%9F"><span class="toc-text">把自己创建的包上传到npm中 ，也可以下载 ？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%8C%85%E6%94%B9%E4%B8%BA%E4%B9%8B%E5%89%8D%E7%9A%84%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F-%EF%BC%9Anpm-config-set-rigistry-https-registry-npm-taobao-org"><span class="toc-text">下载包改为之前的淘宝镜像 ：npm config set rigistry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E5%AE%89%E8%A3%85%E7%9A%84%E6%97%B6%E5%80%99%E9%83%BD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-text">包安装的时候都发生了什么</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E5%9C%A8%E5%8C%85%E9%87%8C%E9%9D%A2%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%91%BD%E4%BB%A4%EF%BC%9F"><span class="toc-text">怎么在包里面创建自己的命令？</span></a></li></ol></div><div class="column is-9"><header class="my-4"></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">9-15</h1><time class="has-text-grey" datetime="2021-09-15T13:27:37.000Z">2021-09-15</time><article class="mt-2 post-content"><h6 id="node可以做什么？"><a href="#node可以做什么？" class="headerlink" title="node可以做什么？"></a>node可以做什么？</h6><pre><code class="js">编写cil：脚本 vue-cli create-react-app 搭建一个webpack
+发包：  发布到线上  npm i xxx
+代理： 异步的，可以处理高并发情况，做中间层
+利用成熟的框架搭建后台： koa / egg
+</code></pre>
+<h6 id="把自己创建的包上传到npm中-，也可以下载-？"><a href="#把自己创建的包上传到npm中-，也可以下载-？" class="headerlink" title="把自己创建的包上传到npm中 ，也可以下载 ？"></a>把自己创建的包上传到npm中 ，也可以下载 ？</h6><ol>
+<li>创建文件夹，命名规范，</li>
+<li>生成package.json ： npm init  -y</li>
+<li>创建一个index.js入口文件</li>
+</ol>
+<ol start="4">
+<li>去npm官网注册账号： <a target="_blank" rel="noopener" href="https://www.npmjs.com/">https://www.npmjs.com/</a></li>
+<li>镜像地址改为npm的镜像地址： npm config set registry <a target="_blank" rel="noopener" href="https://registry.npmjs.org/">https://registry.npmjs.org/</a></li>
+<li>npm login ：输入npm账号密码邮箱</li>
+<li>上传 ： npm publish</li>
+</ol>
+<h6 id="下载包改为之前的淘宝镜像-：npm-config-set-rigistry-https-registry-npm-taobao-org"><a href="#下载包改为之前的淘宝镜像-：npm-config-set-rigistry-https-registry-npm-taobao-org" class="headerlink" title="下载包改为之前的淘宝镜像 ：npm config set rigistry https://registry.npm.taobao.org/"></a>下载包改为之前的淘宝镜像 ：npm config set rigistry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a></h6><h5 id="包安装的时候都发生了什么"><a href="#包安装的时候都发生了什么" class="headerlink" title="包安装的时候都发生了什么"></a>包安装的时候都发生了什么</h5><img src="https://cdn.jsdelivr.net/gh/1wangmengjiang/cdn/img/20210915150611.png" style="zoom: 33%;" />
+
+<h6 id="怎么在包里面创建自己的命令？"><a href="#怎么在包里面创建自己的命令？" class="headerlink" title="怎么在包里面创建自己的命令？"></a>怎么在包里面创建自己的命令？</h6><p>  1.在package.json中加入 ‘bin’ 字段</p>
+<pre><code class="js">&quot;bin&quot;:&#123;
+    //  my_name ：命令   my.js 运行命令的时候执行的js文件
+    &quot;my_name&quot;:&quot;my.js&quot;  
+&#125;
+</code></pre>
+<ol start="2">
+<li><p>在js文件最上面添加一句话</p>
+<pre><code class="js">#!usr/bin/env node
+指定运行node---js
+</code></pre>
+</li>
+<li><p>推到线上，执行命令</p>
+</li>
+</ol>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2021/08/25/8-25/" title="8-25"><span class="has-text-weight-semibold">Next: 8-25</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="1wangmengjiang/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> 王梦江 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

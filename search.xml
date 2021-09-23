@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>9-15</title>
+      <link href="/2021/09/15/9-15/"/>
+      <url>/2021/09/15/9-15/</url>
+      
+        <content type="html"><![CDATA[<h6 id="node可以做什么？"><a href="#node可以做什么？" class="headerlink" title="node可以做什么？"></a>node可以做什么？</h6><pre><code class="js">编写cil：脚本 vue-cli create-react-app 搭建一个webpack发包：  发布到线上  npm i xxx代理： 异步的，可以处理高并发情况，做中间层利用成熟的框架搭建后台： koa / egg</code></pre><h6 id="把自己创建的包上传到npm中-，也可以下载-？"><a href="#把自己创建的包上传到npm中-，也可以下载-？" class="headerlink" title="把自己创建的包上传到npm中 ，也可以下载 ？"></a>把自己创建的包上传到npm中 ，也可以下载 ？</h6><ol><li>创建文件夹，命名规范，</li><li>生成package.json ： npm init  -y</li><li>创建一个index.js入口文件</li></ol><ol start="4"><li>去npm官网注册账号： <a href="https://www.npmjs.com/">https://www.npmjs.com/</a></li><li>镜像地址改为npm的镜像地址： npm config set registry <a href="https://registry.npmjs.org/">https://registry.npmjs.org/</a></li><li>npm login ：输入npm账号密码邮箱</li><li>上传 ： npm publish</li></ol><h6 id="下载包改为之前的淘宝镜像-：npm-config-set-rigistry-https-registry-npm-taobao-org"><a href="#下载包改为之前的淘宝镜像-：npm-config-set-rigistry-https-registry-npm-taobao-org" class="headerlink" title="下载包改为之前的淘宝镜像 ：npm config set rigistry https://registry.npm.taobao.org/"></a>下载包改为之前的淘宝镜像 ：npm config set rigistry <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a></h6><h5 id="包安装的时候都发生了什么"><a href="#包安装的时候都发生了什么" class="headerlink" title="包安装的时候都发生了什么"></a>包安装的时候都发生了什么</h5><img src="https://cdn.jsdelivr.net/gh/1wangmengjiang/cdn/img/20210915150611.png" style="zoom: 33%;" /><h6 id="怎么在包里面创建自己的命令？"><a href="#怎么在包里面创建自己的命令？" class="headerlink" title="怎么在包里面创建自己的命令？"></a>怎么在包里面创建自己的命令？</h6><p>  1.在package.json中加入 ‘bin’ 字段</p><pre><code class="js">&quot;bin&quot;:&#123;    //  my_name ：命令   my.js 运行命令的时候执行的js文件    &quot;my_name&quot;:&quot;my.js&quot;  &#125;</code></pre><ol start="2"><li><p>在js文件最上面添加一句话</p><pre><code class="js">#!usr/bin/env node指定运行node---js</code></pre></li><li><p>推到线上，执行命令</p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>8-25</title>
       <link href="/2021/08/25/8-25/"/>
       <url>/2021/08/25/8-25/</url>
